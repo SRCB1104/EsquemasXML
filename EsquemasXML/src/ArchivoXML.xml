@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE Canciones SYSTEM "ArchivoDTD.dtd">
+
+<Canciones>
+    <Cancion>
+        <Duracion>3:06</Duracion>
+        <Anio>2023</Anio>
+        <Titulo>Columbia</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombre>Pedro Luis</Nombre>
+                <Apellidos>Dominguez Quevedo</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombre>BlueFire</Nombre>
+            </Productor>
+            <Productor>
+                <Nombre>GARABATTO</Nombre>
+            </Productor>
+            <Productor>
+                <Nombre>KIDDO</Nombre>
+            </Productor>
+        </Productores>
+        <Sello>Quevedo</Sello>
+        <Artistas>
+            <Artista>
+                <Nombre>Quevedo</Nombre>
+            </Artista>
+        </Artistas>
+    </Cancion>
+    <Cancion>
+        <Duracion>2:00</Duracion>
+        <Anio>2023</Anio>
+        <Titulo>QUEVEDO #49 AFTER HOUR THE MIXTAPE</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombre>Carlos</Nombre>
+                <Apellidos>Cabrera Suarez</Apellidos>
+            </Compositor>
+            <Compositor>
+                <Nombre>David</Nombre>
+                <Apellidos>Hernandez Garcia</Apellidos>
+            </Compositor>
+            <Compositor>
+                <Nombre>Pedro Luis</Nombre>
+                <Apellidos>Dominguez Quevedo</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombre>BlueFire</Nombre>
+            </Productor>
+        </Productores>
+        <Sello>Sony Music Entertainment</Sello>
+        <Artistas>
+            <Artista>
+                <Nombre>BlueFire</Nombre>
+            </Artista>
+            <Artista>
+                <Nombre>DJ Saot ST</Nombre>
+            </Artista>
+            <Artista>
+                <Nombre>Quevedo</Nombre>
+            </Artista>
+        </Artistas>
+    </Cancion>
+    <Cancion>
+        <Duracion>2:39</Duracion>
+        <Anio>2022</Anio>
+        <Titulo>Nota</Titulo>
+        <Compositores>
+            <Compositor>
+                <Nombre>Eladio</Nombre>
+                <Apellidos>Carrion Cucco</Apellidos>
+            </Compositor>
+            <Compositor>
+                <Nombre>Nicole</Nombre>
+                <Apellidos>Denise Cucco</Apellidos>
+            </Compositor>
+        </Compositores>
+        <Productores>
+            <Productor>
+                <Nombre>Nicael</Nombre>
+            </Productor>
+            <Productor>
+                <Nombre>Tatool</Nombre>
+            </Productor>
+            <Productor>
+                <Nombre>Andre the Giant</Nombre>
+            </Productor>
+        </Productores>
+        <Sello>Rimas Entertainment LLC</Sello>
+        <Artistas>
+            <Artista>
+                <Nombre>Eladio</Nombre>
+                <Apellido>Carrion</Apellido>
+            </Artista>
+            <Artista>
+                <Nombre>Nicki</Nombre>
+                <Apellido>Nicole</Apellido>
+            </Artista>
+        </Artistas>
+    </Cancion>
+</Canciones>

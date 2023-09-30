@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Canciones" type="CancionesType"/>
+  <xs:complexType name="CompositorType">
+    <xs:sequence>
+      <xs:element name="Nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Pedro Luis"/>
+            <xs:enumeration value="Carlos"/>
+            <xs:enumeration value="David"/>
+            <xs:enumeration value="Eladio"/>
+            <xs:enumeration value="Nicole"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Apellidos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Dominguez Quevedo"/>
+            <xs:enumeration value="Cabrera Suarez"/>
+            <xs:enumeration value="Hernandez Garcia"/>
+            <xs:enumeration value="Carrion Cucco"/>
+            <xs:enumeration value="Denise Cucco"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CompositoresType">
+    <xs:sequence>
+      <xs:element type="CompositorType" name="Compositor" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductorType">
+    <xs:sequence>
+      <xs:element name="Nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="BlueFire"/>
+            <xs:enumeration value="GARABATTO"/>
+            <xs:enumeration value="KIDDO"/>
+            <xs:enumeration value="Nicael"/>
+            <xs:enumeration value="Tatool"/>
+            <xs:enumeration value="Andre the Giant"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProductoresType">
+    <xs:sequence>
+      <xs:element type="ProductorType" name="Productor" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArtistaType">
+    <xs:sequence>
+      <xs:element name="Nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Quevedo"/>
+            <xs:enumeration value="BlueFire"/>
+            <xs:enumeration value="DJ Saot ST"/>
+            <xs:enumeration value="Eladio"/>
+            <xs:enumeration value="Nicki"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Apellido" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Carrion"/>
+            <xs:enumeration value="Nicole"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArtistasType">
+    <xs:sequence>
+      <xs:element type="ArtistaType" name="Artista" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancionType">
+    <xs:sequence>
+      <xs:element name="Duracion">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="3:06"/>
+            <xs:enumeration value="2:00"/>
+            <xs:enumeration value="2:39"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Anio">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2023"/>
+            <xs:enumeration value="2022"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="Titulo">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Columbia"/>
+            <xs:enumeration value="QUEVEDO #49 AFTER HOUR THE MIXTAPE"/>
+            <xs:enumeration value="Nota"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="CompositoresType" name="Compositores"/>
+      <xs:element type="ProductoresType" name="Productores"/>
+      <xs:element name="Sello">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Quevedo"/>
+            <xs:enumeration value="Sony Music Entertainment"/>
+            <xs:enumeration value="Rimas Entertainment LLC"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="ArtistasType" name="Artistas"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancionesType">
+    <xs:sequence>
+      <xs:element type="CancionType" name="Cancion" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
